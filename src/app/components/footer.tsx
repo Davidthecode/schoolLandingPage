@@ -30,7 +30,7 @@ export default function Footer() {
                     <p className='pb-2 text-lg'>University</p>
                 </div>
                 <div>
-                    <Image src={leadcity} alt='leadcity' width={70} height={70} />
+                    <Image src={leadcity} alt='leadcity' width={35} height={35} className='rounded-full' />
                 </div>
             </div>
             <div className='flex justify-between items-center px-20 pt-4 extrasmallTablet:flex-col extrasmallTablet:space-y-4 smallScreen:flex-col smallScreen:my-4'>
