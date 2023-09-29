@@ -10,7 +10,7 @@ export default function Navbar() {
             </div>
             <div className="mx-20">
                 <ul className="flex space-x-12 text-xs font-semibold">
-                    <li className="cursor-pointer">Stident's Noticeboard</li>
+                    <li className="cursor-pointer">Stident&apos;s Noticeboard</li>
                     <li className="bg-black w-[1.5px] h-4"></li>
                     <li className="cursor-pointer">News</li>
                     <li className="bg-black w-[1.5px] h-4"></li>
