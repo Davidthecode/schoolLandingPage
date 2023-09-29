@@ -1,6 +1,6 @@
 export default function Leadcity() {
     return (
-        <div className="bg-[#DAE5EB] px-40 smallTablet:px-10 smallTablet:bg-red-500 pt-10 pb-12">
+        <div className="bg-[#DAE5EB] px-40 smallTablet:px-10 pt-10 pb-12">
             <div className="flex justify-center pt-4">
                 <h1 className="text-3xl font-semibold text-black">Welcome To</h1>
             </div>
