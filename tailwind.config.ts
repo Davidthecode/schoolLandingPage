@@ -19,8 +19,16 @@ const config: Config = {
           max: "1300px"
         },
         smallTablet: {
-          min: "400px",
+          min: "700px",
           max: "963px"
+        },
+        extrasmallTablet: {
+          min: "700px",
+          max: "800px"
+        },
+        smallScreen: {
+          min: "0px",
+          max: "800px"
         }
       }
     },

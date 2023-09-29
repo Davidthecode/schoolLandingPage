@@ -33,7 +33,7 @@ export default function Footer() {
                     <Image src={leadcity} alt='leadcity' width={70} height={70} />
                 </div>
             </div>
-            <div className='flex justify-between items-center px-20 pt-4'>
+            <div className='flex justify-between items-center px-20 pt-4 extrasmallTablet:flex-col extrasmallTablet:space-y-4'>
                 <div>
                     <p>© 2023 The President and Fellows of Leadcity university</p>
                 </div>
