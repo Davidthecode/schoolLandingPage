@@ -5,11 +5,11 @@ import {BsReverseLayoutTextSidebarReverse} from 'react-icons/bs'
 
 export default function Navbar() {
     return (
-        <nav className="flex items-center smallScreen:px-8 extrasmallTablet:px-2 xl:bg-gray-100 xl:px-40 md:px-10 largeTablet:px-20 py-4">
+        <nav className="flex items-center smallScreen:px-8 extrasmallTablet:px-2 xl:bg-gray-100 xl:px-40 md:px-10 largeTablet:px-20 py-4 smallScreen:mb-2">
             <div className="bg-gray-100">
-                <Image src={Leadcity} alt="image" width={50} height={50} />
+                <Image src={Leadcity} alt="image" width={50} height={50} className="smallScreen:absolute smallScreen:top-2" />
             </div>
-            <div className="mx-20 smallScreen:invisible">
+            <div className="mx-20 smallScreen:hidden">
                 <ul className="flex xl:space-x-12 extrasmallTablet:space-x-2 largeTablet:space-x-8 md:space-x-4 text-xs font-semibold">
                     <li className="cursor-pointer">Stident&apos;s Noticeboard</li>
                     <li className="bg-black w-[1.5px] h-4"></li>
@@ -25,7 +25,7 @@ export default function Navbar() {
                 </ul>
             </div>
            
-            <div className="flex items-center ml-auto bg-white px-4 py-1 rounded-md w-[10%] sm:invisible largeTablet:visible xl:visible">
+            <div className="flex items-center ml-auto bg-white px-4 py-1 rounded-md w-[10%] smallScreen:invisible sm:invisible largeTablet:visible xl:visible">
                 <div className="mr-2">
                     <RiSearchLine />
                 </div>
@@ -37,8 +37,8 @@ export default function Navbar() {
                     />
                 </div>
             </div>
-            <div className="ml-auto sm:visible largeTablet:invisible xl:invisible">
-                <BsReverseLayoutTextSidebarReverse />
+            <div className="ml-auto sm:visible largeTablet:invisible xl:invisible smallScreen:absolute smallScreen:right-4">
+                <BsReverseLayoutTextSidebarReverse size="1.2rem"/>
             </div>
         </nav>
     )
