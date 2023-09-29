@@ -5,7 +5,7 @@ import {BsReverseLayoutTextSidebarReverse} from 'react-icons/bs'
 
 export default function Navbar() {
     return (
-        <nav className="flex items-center xl:bg-gray-100 xl:px-40 md:bg-red-500 md:px-10 largeTablet:bg-yellow-500 largeTablet:px-20 py-4">
+        <nav className="flex items-center xl:bg-gray-100 xl:px-40 md:px-10 largeTablet:px-20 py-4">
             <div className="bg-gray-100">
                 <Image src={Leadcity} alt="image" width={50} height={50} />
             </div>
