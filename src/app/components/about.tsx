@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="px-40 flex items-center justify-between mb-20 pt-10">
+        <div className="px-40 smallTablet:px-10 flex items-center justify-between mb-20 pt-10">
             <div className="flex flex-col w-[40%]">
                 <div>
                     <p className="text-[#f44d66]">About Leadcity</p>

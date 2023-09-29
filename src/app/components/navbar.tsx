@@ -1,15 +1,16 @@
 import Image from "next/image"
 import Leadcity from '../../../public/leadcity.png'
 import { RiSearchLine } from 'react-icons/ri'
+import {BsReverseLayoutTextSidebarReverse} from 'react-icons/bs'
 
 export default function Navbar() {
     return (
-        <nav className="flex items-center bg-gray-100 px-40 py-4">
+        <nav className="flex items-center xl:bg-gray-100 px-40 md:bg-red-500 md:px-10 largeTablet:bg-yellow-500 largeTablet:px-20 py-4">
             <div className="bg-gray-100">
                 <Image src={Leadcity} alt="image" width={50} height={50} />
             </div>
             <div className="mx-20">
-                <ul className="flex space-x-12 text-xs font-semibold">
+                <ul className="flex space-x-12 largeTablet:space-x-8 md:space-x-4 text-xs font-semibold">
                     <li className="cursor-pointer">Stident&apos;s Noticeboard</li>
                     <li className="bg-black w-[1.5px] h-4"></li>
                     <li className="cursor-pointer">News</li>
@@ -23,7 +24,8 @@ export default function Navbar() {
                     <li className="cursor-pointer">Contacts</li>
                 </ul>
             </div>
-            <div className="flex items-center ml-auto bg-white px-4 py-1 rounded-md w-[10%]">
+           
+            <div className="flex items-center ml-auto bg-white px-4 py-1 rounded-md w-[10%] sm:invisible largeTablet:visible xl:visible">
                 <div className="mr-2">
                     <RiSearchLine />
                 </div>
@@ -34,6 +36,9 @@ export default function Navbar() {
                         placeholder="Search..."
                     />
                 </div>
+            </div>
+            <div className="ml-auto sm:visible largeTablet:invisible xl:invisible">
+                <BsReverseLayoutTextSidebarReverse />
             </div>
         </nav>
     )

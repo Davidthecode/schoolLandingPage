@@ -1,6 +1,6 @@
 export default function Info() {
     return(
-        <div className="bg-[#F8F8F8] flex justify-between px-40 py-12">
+        <div className="bg-[#F8F8F8] flex justify-between px-40 smallTablet:px-10 py-12">
             <div className="bg-white w-[23%] py-12 px-4 flex flex-col justify-center items-center">
                 <h1 className="text-center pb-2 text-[#55A92E] font-semibold">FACULTY</h1>
                 <p className="w-10 h-[1px] mb-2 bg-[#55A92E]"></p>
