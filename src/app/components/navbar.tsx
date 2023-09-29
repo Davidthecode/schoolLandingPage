@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <nav className="flex items-center smallScreen:px-8 extrasmallTablet:px-2 xl:bg-gray-100 xl:px-40 md:px-10 largeTablet:px-20 py-4 smallScreen:mb-2">
             <div className="bg-gray-100">
-                <Image src={Leadcity} alt="image" width={50} height={50} className="smallScreen:absolute smallScreen:top-2" />
+                <Image src={Leadcity} alt="image" width={40} height={40} className="" />
             </div>
             <div className="mx-20 smallScreen:hidden">
                 <ul className="flex xl:space-x-12 extrasmallTablet:space-x-2 largeTablet:space-x-8 md:space-x-4 text-xs font-semibold">
@@ -37,7 +37,7 @@ export default function Navbar() {
                     />
                 </div>
             </div>
-            <div className="ml-auto sm:visible largeTablet:invisible xl:invisible smallScreen:absolute smallScreen:right-4">
+            <div className="ml-auto sm:visible largeTablet:invisible xl:invisible">
                 <BsReverseLayoutTextSidebarReverse size="1.2rem"/>
             </div>
         </nav>
