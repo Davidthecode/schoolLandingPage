@@ -6,12 +6,12 @@ import leadcityFive from '../../../public/leadcity5.png'
 import leadcitySux from '../../../public/leadcity6.png'
 import Image from 'next/image'
 
-export default function YoutubeVideo() {
+export default function ImagesSection() {
     const images = [leadcityOne, leadcityTwo, leadcityThree, leadcityFour, leadcityFive, leadcitySux];
     return (
         <div className="flex items-center pb-6 smallScreen:flex-col bg-[#F8F8F8] pt-12">
         {images.map((image, index) => (
-          <div key={index} className="mr-4 smallScreen:mr-0 smallScreen:w-[95%] smallScreen:mt-4">
+          <div key={index} className="smallScreen:mr-0 smallScreen:w-[95%] smallScreen:mt-4">
             <Image src={image} alt={`LeadCity Image ${index + 1}`} width={600} height={600} />
           </div>
         ))}
